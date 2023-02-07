@@ -46,20 +46,6 @@
         "url": "https://github.com/daybrush/scenejs/issues"
     },
     "homepage": "https://daybrush.com/scenejs",
-    "scripts": {
-        "bootstrap": "lerna bootstrap",
-        "build": "npm run build --prefix ./packages/scenejs",
-        "packages:update": "lerna-helper version",
-        "packages:build": "npm run build --prefix packages/scenejs && lerna run build --ignore demo",
-        "packages:publish": "lerna-helper publish --commit 'chore: publish packages' --ignore demo",
-        "changelog": "lerna-helper changelog --type all --base scenejs",
-        "doc": "rm -rf ./doc && jsdoc -c jsdoc.json",
-        "demo:start": "rollup -c rollup.config.demo.js -w",
-        "demo:build": "rm -rf ./demo/dist && npm run build --prefix packages/demo",
-        "demo:deploy": "gh-pages -d ./demo --dest=./ --add --remote origin",
-        "deploy": "lerna-helper deploy --base scenejs",
-        "release": "lerna-helper release --base scenejs"
-    },
     "devDependencies": {
         "@daybrush/utils": "https://github.com/paperflite-marketing/utils.git",
         "@daybrush/jsdoc": "^0.4.3",
@@ -109,7 +95,7 @@
     },
     "resolutions": {
         "@daybrush/builder": "^0.2.0",
-        "@daybrush/utils": "^1.10.2",
+        "@daybrush/utils": "https://github.com/paperflite-marketing/utils.git",
         "@types/react": "^18.0.26",
         "@types/react-dom": "^18.0.9",
         "typescript": "^4.5.0 <4.6.0",
@@ -120,7 +106,7 @@
     },
     "overrides": {
         "@daybrush/builder": "^0.2.0",
-        "@daybrush/utils": "^1.10.2",
+        "@daybrush/utils": "https://github.com/paperflite-marketing/utils.git",
         "@types/react": "^18.0.26",
         "@types/react-dom": "^18.0.9",
         "typescript": "^4.5.0 <4.6.0",
