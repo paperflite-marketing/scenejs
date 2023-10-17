@@ -1,6 +1,6 @@
 {
     "name": "scenejs",
-    "version": "1.5.0",
+    "version": "1.5.0-win",
     "description": "JavaScript & CSS timeline-based animation library",
     "main": "dist/scene.cjs.js",
     "module": "dist/scene.esm.js",
@@ -55,6 +55,7 @@
         "@types/karma-chai": "^0.1.1",
         "@types/mocha": "^5.2.5",
         "@types/sinon": "^7.0.2",
+        "@types/node": "14.6.0",
         "chai": "^4.1.2",
         "coveralls": "^3.0.0",
         "daybrush-jsdoc-template": "^1.6.0",
@@ -77,7 +78,7 @@
         "typescript": "^3.9.7"
     },
     "dependencies": {
-        "@daybrush/utils": "https://github.com/paperflite-marketing/utils.git",
+        "@daybrush/utils": "https://github.com/paperflite-marketing/utils.git#windows",
         "@scena/event-emitter": "^1.0.3",
         "css-styled": "^1.0.0",
         "order-map": "^0.2.2"
